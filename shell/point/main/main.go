@@ -18,6 +18,7 @@ import (
 	_ "v2ray.com/core/proxy/dokodemo"
 	_ "v2ray.com/core/proxy/freedom"
 	_ "v2ray.com/core/proxy/http"
+	_ "github.com/wangyixiang/v2ray-core/proxy/relay"
 	_ "v2ray.com/core/proxy/shadowsocks"
 	_ "v2ray.com/core/proxy/socks"
 	_ "v2ray.com/core/proxy/vmess/inbound"
@@ -99,6 +100,7 @@ func startV2Ray() *point.Point {
 }
 
 func main() {
+	log.Debug("running from github.com/wangyixiang/v2ray-core")
 	flag.Parse()
 
 	core.PrintVersion()
